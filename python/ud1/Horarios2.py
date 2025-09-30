@@ -1,0 +1,20 @@
+dia=input("Dime un día de la semana: ")
+dia= dia.upper()
+match dia:
+    case "MARTES":
+        print("===============")
+        print("Martes")
+        print("===============")
+        print("8-9 Entorno")
+        print("9-10 Bases de Datos")
+        print("10-11 Bases de Datos")
+        print("11:00-11:30 RECREO")
+        print("11:30-12:30 Sost")
+        print("12:30-13:30 IT.PE")
+        print("13:30-14:30 Digitalización")
+        print("===============")
+    case "Sábado" | "Domingo":
+        print("Día para estudiar y reflexionar")
+    case _:
+        print("Valor incorrecto")
+print("Fin")
