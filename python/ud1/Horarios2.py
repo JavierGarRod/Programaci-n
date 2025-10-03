@@ -1,6 +1,18 @@
 dia=input("Dime un día de la semana: ")
 dia= dia.upper()
 match dia:
+    case "LUNES":
+        print("===============")
+        print("LUNES")
+        print("===============")
+        print("8-9 Entorno")
+        print("9-10 Bases de Datos")
+        print("10-11 Bases de Datos")
+        print("11:00-11:30 RECREO")
+        print("11:30-12:30 Sost")
+        print("12:30-13:30 IT.PE")
+        print("13:30-14:30 Digitalización")
+        print("===============")
     case "MARTES":
         print("===============")
         print("Martes")
@@ -13,7 +25,7 @@ match dia:
         print("12:30-13:30 IT.PE")
         print("13:30-14:30 Digitalización")
         print("===============")
-    case "Sábado" | "Domingo":
+    case "SÁBADO" | "DOMINGO":
         print("Día para estudiar y reflexionar")
     case _:
         print("Valor incorrecto")
