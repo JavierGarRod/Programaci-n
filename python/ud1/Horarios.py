@@ -16,3 +16,4 @@ match dia:
         print("Día para estudiar y reflexionar")
     case _:
         print("Valor incorrecto")
+print("Fin")
