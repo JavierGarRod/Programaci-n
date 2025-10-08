@@ -1,0 +1,5 @@
+n=int(input("Dime un número: "))
+def triangulo_asteriscos(n):
+    for i in range(1, n + 1):
+        print('*' * i)
+triangulo_asteriscos(n)

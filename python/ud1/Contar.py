@@ -1,7 +1,6 @@
 numero=int(input("Dime un número: "))
 if numero>0:
     for i in range(1,numero+1,1):
-       suma =suma+i
        print(i)
 else:
     numero=int(input("Dime un número mayor que cero: "))
