@@ -1,0 +1,8 @@
+n=int(input("Dime un número: "))
+i= "*"
+for i in range(0, n-(n-1)):
+        print("*"*n)
+        for j in range (0, n-2):
+            cadena = "*"+" "*(n-2)+"*"
+            print(cadena)
+        print("*"*n)
