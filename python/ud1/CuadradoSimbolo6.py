@@ -1,9 +1,13 @@
 n=int(input("Dime un número: "))
 i= "*"
-for i in range(0, n-(n-1)):
-        cadena1="*"+"#"*(n-2)+"*"
-        print(cadena1)
-        for j in range (0, n-2):
-            cadena = "*"+"@*"*(n-2)
+for i in range (n):
+        if i%2==0:
+            print("*" + "#"*(n-2) + "*")
+        else:
+            cadena=""
+            for j in range(n):
+                if j%2==0:
+                        cadena=cadena+"*"
+                else:
+                        cadena=cadena+"@"
             print(cadena)
-            print(cadena1)
