@@ -1,5 +1,5 @@
 total = 0
-for i in range(0, 19, 2):  # i toma los valores pares desde 0 hasta 18
+for i in range(0, 19, 2):
     if total % 2 == 0:
         total = i + total
         if i % 3 == 0:
