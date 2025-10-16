@@ -4,23 +4,48 @@ hemis=input("En que hemisferio se encuentra: ").upper()
 while (hemis !="SUR") and (hemis !="NORTE"):
     hemis=input("En que hemisferio se encuentra, sur o norte: ")
 if hemis=="NORTE":
-    match mes:
-            case 1|3:
-              if dia
-              print("Otoño")
-            case 4|6:
-              print("Invierno")
-            case 7|9:
-              print("Primavera")
-            case 10|12:
-              print("Verano")
+        match mes:
+          case 3:
+            if dia>=21:
+              print("Estás en primavera")
+          case 6:
+            if dia>=21:
+              print("Estás en verano")
+          case 9:
+            if dia>=23:
+              print("Estás en otoño")
+          case 12:
+            if dia>=21:
+              print("Estás en invierno")
+          case 1|2:
+            print("Estás en invierno")
+          case 4|5:
+            print("Estás en primavera")
+          case 7|8:
+            print("Estás en verano")
+          case 10|11:
+            print("Estás en otoño")
+elif hemis=="SUR":
+  match mes:
+          case 3:
+            if dia>=21:
+              print("Estás en otoño")
+          case 6:
+            if dia>=21:
+              print("Estás en invierno")
+          case 9:
+            if dia>=23:
+              print("Estás en primavera")
+          case 12:
+            if dia>=21:
+              print("Estás en verano")
+          case 1|2:
+            print("Estás en verano")
+          case 4|5:
+            print("Estás en otoño")
+          case 7|8:
+            print("Estás en invierno")
+          case 10|11:
+            print("Estás en primavera")
 else:
-    match dia:
-            case 23|9:
-              print("Primavera")
-            case 21|12:
-              print("Verano")
-            case 21|3:
-              print("Otoño")
-            case 21|6:
-              print("Invierno")
+  print("Error")
