@@ -1,6 +1,7 @@
 dias_semana=["Lunes","Martes","Jueves"]
+#               0        1        2
 dias_finde=["Sabado","Domingo"]
-print(dias_semana[1:4]) #lectura por posicion del 1 hasta el 4 sin incluirlo
+print(dias_semana[1:4]) #lectura por posicion del 1 hasta el 4 sin incluirlos
 dias_semana.append("Viernes") #para introducir datos
 dias_semana.insert(2,"Miercoles") #para introducir datos donde quiera
 dias_semana=dias_semana+dias_finde #fusion de listas
@@ -13,8 +14,18 @@ dias_semana.remove("Martes") #para borrar por valor
 print(len(dias_semana)) #tamaño de la lista
 print(dias_semana)
 
+for dias in dias_semana: #para imprimir cada dato de la lista
+    print(dias)
+for dias in range (len(dias_semana)): #para imprimir cada dato de la lista
+    print(dias)
+for dias in reversed (dias_semana): #para imprimir cada dato de la lista de forma inversa
+    print(dias)
+
 if "martes2" in dias_semana:
     print("Lo tengo")
     print(dias_semana.index("Lunes")) #devuelve en que posicion esta ese valor
 else:
     print("No lo tengo")
+
+txt= "The best thing in life are free"
+print("free" in txt) #averigua si "free" esta en la lista imprimiendo true
