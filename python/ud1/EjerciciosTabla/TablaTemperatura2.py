@@ -3,7 +3,7 @@ temperaturas = []
 print("Introduce la temperatura media de cada mes del año:")
 
 for i in range(12):
-    temp = int(input("Introduce la temperatura",meses[i]))
+    temp = int(input("Introduce la temperatura: "))
     temperaturas.append(temp)
 
 print("Diagrama de temperaturas medias por mes:")

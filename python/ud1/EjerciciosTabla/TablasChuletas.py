@@ -6,9 +6,10 @@ dias_semana.append("Viernes") #para introducir datos
 dias_semana.insert(2,"Miercoles") #para introducir datos donde quiera
 dias_semana=dias_semana+dias_finde #fusion de listas
 print(dias_semana)
-print(dias_semana[0:len(dias_semana)]) #lista completa
-print(dias_semana[-len(dias_semana)]) #dia de la semana
-print(dias_semana[:-len(dias_semana)]) #dia de la semana
+print(dias_semana[0:len(dias_semana)]) #imprime la lista completa
+print(dias_semana[-len(dias_semana)]) #imprime solo el primero de la lista ya que elimina todos los demás
+print(dias_semana[:-len(dias_semana)]) #imprime todo eliminado
+print(dias_semana[::-1]) #imprime la lista al revés
 dias_semana.pop(6) #para borrar por posicion
 dias_semana.remove("Martes") #para borrar por valor
 print(len(dias_semana)) #tamaño de la lista
@@ -29,3 +30,4 @@ else:
 
 txt= "The best thing in life are free"
 print("free" in txt) #averigua si "free" esta en la lista imprimiendo true
+print("free" not in txt) #averigua si "free" no esta en la lista impromiendo true
