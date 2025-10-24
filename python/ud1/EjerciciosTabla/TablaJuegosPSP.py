@@ -36,8 +36,11 @@ while True:
         if len(nombres) == 0:
             print("No hay juegos registrados para evaluar.")
         else:
-            max_puntuacion = max(puntuaciones)
-            indice = puntuaciones.index(max_puntuacion)
+            mayor=puntuaciones[0]
+            for num in puntuaciones:
+                if num>mayor:
+                    mayor=num
+            indice = puntuaciones.index(mayor)
             print(f"Mejor juego:{nombres[indice]} | Puntuación: {puntuaciones[indice]} | Género: {generos[indice]}")
     elif opcion == "D":
         if len(nombres) == 0:
@@ -51,7 +54,7 @@ while True:
                 print("Este juego no está en la lista del sistema.")
     elif opcion == "G":
         if len(nombres) == 0:
-            print("\nNo hay juegos registrados.")
+            print("No hay juegos registrados.")
         else:
             genero_buscar = input("Introduce el género a filtrar: ").upper()
             encontrados = False
@@ -64,6 +67,5 @@ while True:
                 print("No hay juegos para ese género en la lista del sistema.")
     elif opcion == "S":
         print("Saliendo del programa...")
-        break
     else:
-        print("Opción no válida. Intenta nuevamente.")
+        print("Opción no válida, inténtalo nuevamente.")
