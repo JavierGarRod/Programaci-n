@@ -67,5 +67,6 @@ while True:
                 print("No hay juegos para ese género en la lista del sistema.")
     elif opcion == "S":
         print("Saliendo del programa...")
+        break
     else:
         print("Opción no válida, inténtalo nuevamente.")
