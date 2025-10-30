@@ -31,3 +31,7 @@ else:
 txt= "The best thing in life are free"
 print("free" in txt) #averigua si "free" esta en la lista imprimiendo true
 print("free" not in txt) #averigua si "free" no esta en la lista impromiendo true
+
+dias2=["Bienvenidos a pepelandia"]
+dias2.split("o") #Quita de la lista todo los elementos que sean en este caso "o"
+print(dias2)
