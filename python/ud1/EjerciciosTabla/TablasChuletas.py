@@ -6,6 +6,22 @@ dias_semana.append("Viernes") #para introducir datos
 dias_semana.insert(2,"Miercoles") #para introducir datos donde quiera
 dias_semana=dias_semana+dias_finde #fusion de listas
 print(dias_semana)
+
+#LAS CADENAS SON INMUTABLES
+mensaje="Lucía"
+mensaje.replace("a","o") #remplaza en la lista mensaje TODAS las palabras "a" por "o"
+print(mensaje)
+mensaje=mensaje.replace("a","o") #Así se cambia el nombre
+nombreLista=list(mensaje)
+nombreLista.insert(0,"A")
+print(nombreLista)
+cadena=""
+for valor in nombreLista:
+    cadena=cadena+valor
+print(cadena)
+
+
+
 print(dias_semana[0:len(dias_semana)]) #imprime la lista completa
 print(dias_semana[-len(dias_semana)]) #imprime solo el primero de la lista ya que elimina todos los demás
 print(dias_semana[:-len(dias_semana)]) #imprime todo eliminado
