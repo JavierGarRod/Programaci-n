@@ -1,14 +1,6 @@
-num=int(input("Dime un número: "))
-cadena=[]
+num=input("Dime un número: ")
+num2=input("Dime un número haber si está: ")
 
-while num > 0:
-    digito = num % 10    
-    cadena.append(digito)
-    num = num // 10
+num=num.find(num2)
+print(num)
 
-num2=int(input("Dime un número haber si está: "))
-
-if num2 in cadena:
-    print(cadena.index(num2))
-else:
-    print("-1")
