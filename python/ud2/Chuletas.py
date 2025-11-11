@@ -14,10 +14,10 @@ print(saludar()) # Nombre toma el valor desconocido
 print(saludar("Pepe")) # Nombre toma el valor  Pepe
 
 def saludar():
-    nombre = "Elena"
+    nombre = "Javi"
     print("Hola", nombre)
 
-saludar()  # → Hola Elena
+saludar()  # → Hola Javi
 
 # MUTABLES E INMUTABLES
 def suma(n1, n2):
