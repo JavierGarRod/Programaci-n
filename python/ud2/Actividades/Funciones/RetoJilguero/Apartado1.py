@@ -26,10 +26,10 @@ def esValida(notas):
                     sin_repetido=True
                 else:
                     sin_repetido=False
-        if sin_repetido:
-            print("La secuencia es VÁLIDA.")
-        else:
-            print("La secuencia NO es válida.")
+    if sin_repetido==True:
+        print("La secuencia es VÁLIDA.")
+    else:
+        print("La secuencia NO es válida.")
     
     return (sin_repetido)
 
