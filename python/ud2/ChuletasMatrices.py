@@ -1,7 +1,7 @@
 #Una matríz es una cadena de cadenas, es decir:
-matriz=[[0,2,4],     #posicion 1
-        [1,3,5],     #posicion 2
-        [6,8,10]]    #posicion 3
+matriz=[[0,2,4],     #posicion 0
+        [1,3,5],     #posicion 1
+        [6,8,10]]    #posicion 2
 #matriz=[[],[],[]]
 matriz[1] #lectura por posicion matriz[1]=[1,3,5]
 matriz[1][1] #lectura por posicion en especifico, elemento de la cedena 1 en la posicion 1, matriz[1][1]=3
