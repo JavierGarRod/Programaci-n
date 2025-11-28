@@ -22,7 +22,7 @@ def cargaCesta(dineroMax):
     print("Productos:",producto)
     print("Precios:",precios)
     print("Coste total de la cesta:",total)
-    return producto, precios, costeTotal
+    return producto, precios, costeTotal  
 
 def pinteMenu():
     print("Pulse S para calcular el dinero sobrante")
