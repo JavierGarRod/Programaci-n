@@ -31,9 +31,8 @@ def mediaFila(Matriz):
 #
 #    return mediaTotal3
 
-def getColumna(Matriz):
+def getColumna(Matriz,numColumna):
     columna=[]
-    numColumna=0
     for numero in range(0,len(Matriz)):
         columna.append(Matriz[numero][numColumna])
 
