@@ -27,6 +27,9 @@ def columna(m, c):
         col.append(m[i][c])
     return col
 
+m=[[1,2,3],[2,3,4]]
+c=1
+print(columna(m,c))
 # ------------------------------------------------------
 # 2. Suma de todos los elementos de una matriz
 # ------------------------------------------------------
