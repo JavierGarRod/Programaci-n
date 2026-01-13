@@ -44,16 +44,16 @@ def jugarALaLinea(carton_bingo,numSalidos,numfila):
     generaAleatorio(numSalidos)
     #compruebaSiHayLineaEnFila(numSalidos,numfila,carton_bingo)
 
-def lineaEncontrada(numSalidos,fila,posicion,lista,numero):
+def lineaEncontrada(numSalidos,filaAcertante) :#,posicion,lista,numero):
     print("Se ha conseguido LÍNEA en el cartón.")
     print(f"-Números que han salido antes de completar la fila: {len(numSalidos)}")
-    print(f"-Fila acertante: la nº {buscaNumeroEnLista(lista,numero)}:{fila}")
-    print(f"-Lista de nº que han salido:{generaAleatorio(numSalidos)}")
+    #print(f"-Fila acertante: la nº {#fila}")
+    print(f"-Lista de nº que han salido:{numSalidos}")
 
-numSalidos=[]
-fila=[]   
-lista=[]
-numero=0
-posicion=0
-juega=jugarALaLinea(carton_bingo,numSalidos,fila)
-finJuego=lineaEncontrada(numSalidos,fila,posicion,lista,numero)
+#numSalidos=[]
+#fila=[]   
+#lista=[]
+#numero=0
+#posicion=0
+#juega=jugarALaLinea(carton_bingo,numSalidos,fila)
+#finJuego=lineaEncontrada(numSalidos,fila,posicion,lista,numero)
