@@ -1,10 +1,10 @@
 package java.org.example.Tema1.ActividadesU1Java.Funciones;
 
-public class Ejercicio0001 {
+public class Ejercicio1 {
     static void main() {
         int x = 144;
         int y = 999;
-        Ejercicio0001 referencia = new Ejercicio0001();
+        Ejercicio1 referencia = new Ejercicio1();
         int sum = referencia.suma(x, y);
         int res = referencia.resta(x, y);
         float divi = referencia.division(x, y);

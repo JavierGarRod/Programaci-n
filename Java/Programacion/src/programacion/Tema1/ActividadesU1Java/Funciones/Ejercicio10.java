@@ -3,11 +3,11 @@ package java.org.example.Tema1.ActividadesU1Java.Funciones;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ejercicio00010 {
+public class Ejercicio10 {
     static void main() {
         Random r = new Random();
         int numeroAdivinar=r.nextInt(0,10);
-        Ejercicio00010 ref=new Ejercicio00010();
+        Ejercicio10 ref=new Ejercicio10();
         ref.adivinaNum(numeroAdivinar);
     }
     void adivinaNum(int numeroA) {
