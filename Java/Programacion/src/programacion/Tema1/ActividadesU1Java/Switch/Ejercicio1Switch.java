@@ -1,4 +1,4 @@
-package java.org.example.Tema1.ActividadesU1Java.Switch;
+package programacion.Tema1.ActividadesU1Java.Switch;
 import java.util.Scanner;
 
 public class Ejercici01 {

@@ -1,4 +1,4 @@
-package java.org.example.Tema1.ActividadesU1Java.Cadenas;
+package programacion.Tema1.ActividadesU1Java.Cadenas;
 
 public class Introduccion {
     static void main() {
