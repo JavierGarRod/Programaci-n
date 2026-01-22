@@ -2,7 +2,7 @@ package programacion.Tema1.ActividadesU1Java.Switch;
 
 import java.util.Scanner;
 
-public class Ejercicio06 {
+public class Ejercicio6Switch {
     static void main() {
         System.out.println("Habitacion    Camas    Planta");
         System.out.println("1.Azul          2      Primera");

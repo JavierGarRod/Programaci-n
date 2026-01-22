@@ -3,11 +3,11 @@ package programacion.Tema1.ActividadesU1Java.Funciones;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ejercicio10 {
+public class Ejercicio10Funciones {
     static void main() {
         Random r = new Random();
         int numeroAdivinar=r.nextInt(0,10);
-        Ejercicio10 ref=new Ejercicio10();
+        Ejercicio10Funciones ref=new Ejercicio10Funciones();
         ref.adivinaNum(numeroAdivinar);
     }
     void adivinaNum(int numeroA) {

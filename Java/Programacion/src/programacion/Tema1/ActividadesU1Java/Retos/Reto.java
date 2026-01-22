@@ -1,4 +1,4 @@
-package java.org.example.Tema1.ActividadesU1Java.Retos;
+package programacion.Tema1.ActividadesU1Java.Retos;
 
 import java.util.Scanner;
 

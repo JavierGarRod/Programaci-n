@@ -2,7 +2,7 @@ package programacion.Tema1.ActividadesU1Java.Tablas;
 
 import java.util.Scanner;
 
-public class Ejercicio3Tablas {
+public class Ejercicio4Tablas {
     static void main(String[] args) {
         int [] tabla={1,2,3,4,7};
         Scanner sc = new Scanner(System.in);
@@ -19,7 +19,10 @@ public class Ejercicio3Tablas {
                 b++;
             }
         }
-        if(encontrado==false){
+        if(encontrado){
+            System.out.println(b);
+        }
+        else{
             System.out.println("-"+(b-1));
         }
     }

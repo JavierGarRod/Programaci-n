@@ -1,4 +1,4 @@
-package java.org.example.Tema1.ActividadesU1Java.Introduccion;
+package programacion.Tema1.ActividadesU1Java.Introduccion;
 
 public class Ejercicio1 {
     static void main() {

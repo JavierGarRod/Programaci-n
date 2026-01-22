@@ -2,7 +2,7 @@ package programacion.Tema1.ActividadesU1Java.Switch;
 
 import java.util.Scanner;
 
-public class Ejercicio07 {
+public class Ejercicio7Switch {
     static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce un número: ");

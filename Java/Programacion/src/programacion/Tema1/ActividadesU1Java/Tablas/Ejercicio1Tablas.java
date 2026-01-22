@@ -1,4 +1,4 @@
-package java.org.example.Tema1.ActividadesU1Java.Tablas;
+package programacion.Tema1.ActividadesU1Java.Tablas;
 
 public class Ejercicio1Tablas {
     static void main() {

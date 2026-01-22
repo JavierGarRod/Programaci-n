@@ -1,7 +1,7 @@
-package programacion.Tema1.ActividadesU1Java.For;
+package programacion.Tema1.ActividadesU1Java.IteracionesForWhile;
 
-public class Ejercicio1For {
+public class Ejercicio1Iteraciones {
     static void main(String[] args) {
-
+        String [] grupos={"A","B","C","D"};
     }
 }

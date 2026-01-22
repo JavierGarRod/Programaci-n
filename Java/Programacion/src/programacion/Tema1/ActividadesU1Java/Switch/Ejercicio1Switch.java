@@ -1,7 +1,7 @@
 package programacion.Tema1.ActividadesU1Java.Switch;
 import java.util.Scanner;
 
-public class Ejercici01 {
+public class Ejercicio1Switch {
     static void main() {
         System.out.println("Dime un número: ");
         Scanner sc = new Scanner(System.in);
