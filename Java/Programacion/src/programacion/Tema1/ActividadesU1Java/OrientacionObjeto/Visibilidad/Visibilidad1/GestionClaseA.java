@@ -1,0 +1,11 @@
+package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Visibilidad;
+
+import programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Visibilidad2.ClaseA;
+
+public class GestionClaseA {
+    public static void main(String[] args) {
+        ClaseA objeto = new ClaseA();// ¿Se puede acceder?
+        System.out.println(objeto.atributoPrivado); // ¿Se puede acceder?
+        System.out.println(objeto.suma(2, 3)); // ¿Se puede acceder?
+    }
+}
