@@ -1,4 +1,4 @@
-package programacion.Tema1.ActividadesU1Java.OrientacionObjeto;
+package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Introduccion;
 
 public class Persona {
 

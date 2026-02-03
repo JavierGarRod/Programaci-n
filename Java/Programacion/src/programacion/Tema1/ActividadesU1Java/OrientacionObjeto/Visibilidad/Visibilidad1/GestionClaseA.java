@@ -1,6 +1,6 @@
-package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Visibilidad;
+/*package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Visibilidad.Visibilidad1;
 
-import programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Visibilidad2.ClaseA;
+import programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Visibilidad.Visibilidad2.ClaseA;
 
 public class GestionClaseA {
     public static void main(String[] args) {
@@ -8,4 +8,4 @@ public class GestionClaseA {
         System.out.println(objeto.atributoPrivado); // ¿Se puede acceder?
         System.out.println(objeto.suma(2, 3)); // ¿Se puede acceder?
     }
-}
+}*/
