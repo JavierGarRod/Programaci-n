@@ -1,4 +1,4 @@
-package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Drones;
+package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.DronesReparto;
 
 public class PaqueteRuta {
     // atributos

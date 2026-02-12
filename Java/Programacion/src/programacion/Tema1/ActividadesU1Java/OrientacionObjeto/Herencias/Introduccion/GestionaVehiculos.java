@@ -1,4 +1,4 @@
-package programacion.Tema1.ActividadesU1Java.Herencias.Ej2;
+package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Herencias.Introduccion;
 
 public class GestionaVehiculos {
 
@@ -9,10 +9,10 @@ public class GestionaVehiculos {
         Vehiculo cocheC = new Automovil("2222BBB", "C", "Sevilla", 3);
 
         System.out.println(cocheEco);
-        System.out.println("Limitación Madrid: " + cocheEco.tieneLimitacionParaCircular());
+        System.out.println("Limitación Madrid: " + cocheEco.tieneLicienciaParaCircular(cocheEco.ciudad, cocheEco.tipo));
 
         System.out.println(cocheC);
-        System.out.println("Limitación Sevilla: " + cocheC.tieneLimitacionParaCircular());
+        System.out.println("Limitación Sevilla: " + cocheC.tieneLicienciaParaCircular(cocheC.ciudad, cocheC.tipo));
 
         // Camiones
         Vehiculo camion1 = new Camion("3333CCC", "B", "Madrid", 500, 2);

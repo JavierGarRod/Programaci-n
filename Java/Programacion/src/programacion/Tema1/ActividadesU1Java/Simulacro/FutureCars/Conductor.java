@@ -1,16 +1,21 @@
 package programacion.Tema1.ActividadesU1Java.Simulacro.FutureCars;
 
-public class Conductores {
-    private String nombre;
-    private int añosExperiencia;
+public class Conductor {
 
-    public Conductores(String nombre, int aniosExperiencia) {
+    private String nombre;
+    private int aniosExperiencia;
+
+    public Conductor(String nombre, int aniosExperiencia) {
         this.nombre = nombre;
-        this.añosExperiencia = aniosExperiencia;
+        this.aniosExperiencia = aniosExperiencia;
     }
 
     public String getNombre() {
         return nombre;
+    }
+
+    public int getAniosExperiencia() {
+        return aniosExperiencia;
     }
 
     public void conducir() {

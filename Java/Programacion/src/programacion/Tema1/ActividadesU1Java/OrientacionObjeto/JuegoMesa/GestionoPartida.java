@@ -1,18 +1,21 @@
 package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.JuegoMesa;
 
-public class GestionPartida {
-    static void main() {
-        Participante pepe=new Participante("","Pepe",0,1234);
-        Participante jose=new Participante("","Jose",0,1334);
-        Participante elena=new Participante("","Elena",0,2234);
-        Participante javi=new Participante("","Javi",0,5234);
+public class GestionoPartida {
+    public static void main(String[] args) {
+        // Crear participantes
+        Participante p1 = new Participante("Luna", "Lucía", 20, 50);
+        Participante p2 = new Participante("Shadow", "Carlos", 22, 70);
+        Participante p3 = new Participante("Rex", "Andrés", 19, 40);
+        Participante p4 = new Participante("Nova", "María", 21, 90);
 
-        String[] participante=new String[4];
-        participante[0] = pepe.getNombre();
-        participante[1] = jose.getNombre();
-        participante[2] = elena.getNombre();
-        participante[3] = javi.getNombre();
+        // Meterlos en un array
+        Participante[] jugadores = {p1, p2, p3, p4};
 
+        // Crear partida (escena donde ocurre todo)
+        Partida partida = new Partida("Catan", jugadores);
 
+        // Mostrar quién tiene más puntos
+        Participante ganador = partida.jugador_con_mas_puntos(); //objeto-metodo/atributo
+        System.out.println("El jugador con más puntos es: " + ganador);
     }
 }

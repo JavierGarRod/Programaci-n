@@ -1,6 +1,9 @@
-package programacion.Tema1.ActividadesU1Java.Simulacro.AutosInteligentes;
+package programacion.Tema1.ActividadesU1Java.Simulacro.FutureCars;
+
+import java.util.Objects;
 
 public class Coche {
+
     private String marca;
     private String modelo;
     private String matricula;
@@ -18,24 +21,43 @@ public class Coche {
         this.estado = Estado.APAGADO;
     }
 
+    public Estado getEstado() {
+        return estado;
+    }
+
     public void arrancar(Conductor conductor) {
+
         if (!conductor.equals(duenio)) {
             System.out.println("Solo el dueño puede arrancar el coche");
             return;
         }
+
         estado = Estado.ARRANCADO;
         System.out.println("Coche arrancado");
-        conductor.conducir();
     }
 
-    public void verificarParada() {
+    public void apagar(){
+        if (estado==Estado.ARRANCADO){
+            estado=Estado.APAGADO;
+            System.out.println("El coche se ha apagado");
+        }
+        else{
+            System.out.println("El coche ya se encuentra apagado");
+        }
+    }
+
+    public void verificarDebeParar() {
+
         while (estado == Estado.ARRANCADO) {
-            if (sensor.hayObstaculoCercano()) {
-                System.out.println("Obstáculo cercano detectado. El coche se apaga.");
+
+            if (sensor.obstaculoCercano()) {
+                System.out.println("Obstáculo cercano detectado. El coche se detiene.");
                 estado = Estado.APAGADO;
             }
-            // en un sistema real habría espera / actualización de sensores
-            break;
+
+            else{
+                estado=Estado.ARRANCADO;
+            }
         }
     }
 

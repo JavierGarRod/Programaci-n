@@ -1,5 +1,7 @@
 package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Introduccion;
 
+import java.util.Objects;
+
 public class Persona {
 
     //Atributos
@@ -8,6 +10,19 @@ public class Persona {
     String lugarNacimiento;
     String deporteFav;
     String peliFav;
+    String dni;
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return Objects.equals(dni, persona.dni);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(dni);
+    }
 
     //Constructor
     //Constructor por parámetros
