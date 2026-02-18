@@ -1,23 +1,25 @@
 package programacion.Tema1.ActividadesU1Java.Simulacro.Incidencias;
 
+import java.time.LocalDate;
+
 public class Incidente {
     private int idNum;
     private String nombre;
     private String descripcion;
-    private String fechaInicio;
-    private String fechaFin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
     Estado estado;
     Criticidad criticidad;
     Equipo equipo;
 
-    public Incidente(int idNum, String nombre, String fechaInicio, String fechaFin, Estado estado, Criticidad criticidad, Equipo equipo) {
+    public Incidente(int idNum, String nombre, LocalDate fechaInicio, LocalDate fechaFin, Estado estado, Criticidad criticidad, Equipo equipo) {
         this.idNum = idNum;
         this.nombre = nombre;
-        this.fechaInicio = fechaInicio;
-        setFechaFin(fechaFin);
+        setFechaInicio(fechaInicio);
         this.estado = estado;
         this.criticidad = criticidad;
         this.equipo = equipo;
+        setFechaFin(fechaFin);
     }
 
     public int getIdNum() {
@@ -44,20 +46,22 @@ public class Incidente {
         this.descripcion = descripcion;
     }
 
-    public String getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(String fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public void setFechaInicio(LocalDate fechaInicio) {
+        if(fechaInicio == null){
+            this.fechaInicio=LocalDate.now();
+        }
     }
 
-    public String getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(String fechaFin) {
-        if(estado.equals("CERRADA")){
+    public void setFechaFin(LocalDate fechaFin) {
+        if(estado!=null && estado.equals("CERRADA")){
             this.fechaFin=fechaFin;
         }
         else{
@@ -99,8 +103,8 @@ public class Incidente {
                 '}';
     }
 
-    boolean esUrgente(Estado estado, int tiempoTranscurrido){
-        if(estado.equals("CRITICA") || estado.equals("GRAVE") || estado.equals("MEDIA")){
+    boolean esUrgente(Estado estado){
+        if(estado.equals("CRITICA") || (estado.equals("GRAVE") && (fechaInicio-fechaFin>=7))|| estado.equals("MEDIA")){
             return true;
         }
         else{

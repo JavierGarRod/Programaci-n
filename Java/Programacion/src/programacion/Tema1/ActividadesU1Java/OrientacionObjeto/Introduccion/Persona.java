@@ -12,6 +12,7 @@ public class Persona {
     String peliFav;
     String dni;
 
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
