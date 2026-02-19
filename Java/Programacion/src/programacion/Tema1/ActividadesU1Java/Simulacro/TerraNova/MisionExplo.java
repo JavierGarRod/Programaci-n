@@ -2,22 +2,27 @@ package programacion.Tema1.ActividadesU1Java.Simulacro.TerraNova;
 
 import java.time.LocalDate;
 
-public class MisionExplo extends Misiones{
-    private String dsetino;
+public class MisionExplo extends Mision{
+
+    //atributos
+    private String destino;
     private int tripulacion;
 
-    public MisionExplo(int codNum, String nombre, LocalDate fechaLanzamiento, Nave nave, Estado estado, String dsetino, int tripulacion) {
-        super(codNum, nombre, fechaLanzamiento, nave, estado);
-        this.dsetino = dsetino;
+    //constructor
+    public MisionExplo(int cod, String nombre, LocalDate fecha_lanz, Nave nave, int tripulacion, String destino) {
+        super(cod, nombre, fecha_lanz, nave);
         this.tripulacion = tripulacion;
+        this.destino = destino;
     }
 
-    public String getDsetino() {
-        return dsetino;
+    //getters setters
+
+    public String getDestino() {
+        return destino;
     }
 
-    public void setDsetino(String dsetino) {
-        this.dsetino = dsetino;
+    public void setDestino(String destino) {
+        this.destino = destino;
     }
 
     public int getTripulacion() {
@@ -29,15 +34,18 @@ public class MisionExplo extends Misiones{
     }
 
     @Override
-    public String toString() {
-        return "MisionExplo{" +
-                "dsetino='" + getDsetino() + '\'' +
-                ", tripulacion=" + getTripulacion() +
-                ", codNum=" + getCodNum() +
-                ", nombre='" + getNombre() + '\'' +
-                ", fechaLanzamiento=" + getFechaLanzamiento() +
-                ", nave=" + getNave() +
-                ", estado=" + getEstado() +
-                '}';
+    public boolean mision_riesgo() {
+        LocalDate hoy = LocalDate.now();
+
+        if (destino.equalsIgnoreCase("Marte")){
+            return true;
+        } else if (!getFecha_lanz().isAfter(hoy.plusDays(7))) {
+            return true;
+        }
+        return false;
     }
+
+
+    // métodos
+
 }

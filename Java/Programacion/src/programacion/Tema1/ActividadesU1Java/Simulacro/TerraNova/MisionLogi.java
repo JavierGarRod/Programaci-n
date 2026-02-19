@@ -2,13 +2,17 @@ package programacion.Tema1.ActividadesU1Java.Simulacro.TerraNova;
 
 import java.time.LocalDate;
 
-public class MisionLogi extends Misiones{
+public class MisionLogi extends Mision{
+    //atributos
     private double carga;
 
-    public MisionLogi(int codNum, String nombre, LocalDate fechaLanzamiento, Nave nave, Estado estado, double carga) {
-        super(codNum, nombre, fechaLanzamiento, nave, estado);
+    //constructor
+    public MisionLogi(int cod, String nombre, LocalDate fecha_lanz, Nave nave, double carga) {
+        super(cod, nombre, fecha_lanz, nave);
         this.carga = carga;
     }
+
+    //getters setters
 
     public double getCarga() {
         return carga;
@@ -19,14 +23,13 @@ public class MisionLogi extends Misiones{
     }
 
     @Override
-    public String toString() {
-        return "MisionLogi{" +
-                "carga=" + getCarga() +
-                ", codNum=" + getCodNum() +
-                ", nombre='" + getNombre() + '\'' +
-                ", fechaLanzamiento=" + getFechaLanzamiento() +
-                ", nave=" + getNave() +
-                ", estado=" + getEstado() +
-                '}';
+    public boolean mision_riesgo() {
+        if(getCarga() <= 50)return false;
+        switch (getFecha_lanz().getDayOfWeek()){
+            case SATURDAY,SUNDAY:
+                return true;
+            default:
+                return false;
+        }
     }
 }

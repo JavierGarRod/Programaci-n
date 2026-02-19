@@ -1,24 +1,32 @@
 package programacion.Tema1.ActividadesU1Java.Simulacro.TerraNova;
 
+import java.util.Objects;
+
 public class Nave {
-    private String codId;
+    //atributos
+
+    private String id;
     private String modelo;
-    private double hVuelo;
-    private String igualdad;
+    private int horas_vuelo;
+    private Comandante comandante;
 
-    public Nave(String codId, String modelo, double hVuelo, String igualdad) {
-        this.codId = codId;
+    //constructor
+
+    public Nave(String id, String modelo, int horas_vuelo, Comandante comandante) {
+        this.id = id;
         this.modelo = modelo;
-        this.hVuelo = hVuelo;
-        this.igualdad = igualdad;
+        this.horas_vuelo = horas_vuelo;
+        this.comandante = comandante;
     }
 
-    public String getCodId() {
-        return codId;
+    //getters y setters
+
+    public String getId() {
+        return id;
     }
 
-    public void setCodId(String codId) {
-        this.codId = codId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getModelo() {
@@ -29,29 +37,39 @@ public class Nave {
         this.modelo = modelo;
     }
 
-    public double gethVuelo() {
-        return hVuelo;
+    public int getHoras_vuelo() {
+        return horas_vuelo;
     }
 
-    public void sethVuelo(double hVuelo) {
-        this.hVuelo = hVuelo;
+    public void setHoras_vuelo(int horas_vuelo) {
+        this.horas_vuelo = horas_vuelo;
     }
 
-    public String getIgualdad() {
-        return igualdad;
+    public Comandante getComandante() {
+        return comandante;
     }
 
-    public void setIgualdad(String igualdad) {
-        this.igualdad = igualdad;
+    public void setComandante(Comandante comandante) {
+        this.comandante = comandante;
+    }
+
+    //equals
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Nave nave)) return false;
+        return Objects.equals(id, nave.id);
     }
 
     @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+
+    //toString
+
+    @Override
     public String toString() {
-        return "Nave{" +
-                "codId='" + getCodId() + '\'' +
-                ", modelo='" + getModelo() + '\'' +
-                ", hVuelo=" + gethVuelo() +
-                ", igualdad='" + getIgualdad() + '\'' +
-                '}';
+        return id + "(" + modelo + ") - Cmd: " + comandante.getNombre();
     }
 }
