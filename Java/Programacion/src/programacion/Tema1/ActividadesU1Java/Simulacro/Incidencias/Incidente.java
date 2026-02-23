@@ -1,4 +1,4 @@
-package programacion.Tema1.ActividadesU1Java.Simulacro.Incidencias;
+/*package programacion.Tema1.ActividadesU1Java.Simulacro.Incidencias;
 
 import java.time.LocalDate;
 
@@ -111,4 +111,4 @@ public class Incidente {
             return false;
         }
     }
-}
+}*/
