@@ -1,4 +1,4 @@
-package programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Ej2Planeta;
+package src.programacion.Tema1.ActividadesU1Java.OrientacionObjeto.Ej2Planeta;
 
 import java.util.ArrayList;
 import java.util.List;

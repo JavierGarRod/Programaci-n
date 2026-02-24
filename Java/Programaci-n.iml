@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ProgramacionJava1/.idea/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Programacion/src/programacion/Tema1/ActividadesU1Java/OrientacionObjeto/Ej2Planeta" />
+      <excludeFolder url="file://$MODULE_DIR$/src/programacion/Tema1/ActividadesU1Java/OrientacionObjeto/Ej2Planeta" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
