@@ -1,4 +1,4 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3.Modelo;
 
 public class RobotsSoldador extends Robots{
     private double temperatura;
@@ -27,12 +27,12 @@ public class RobotsSoldador extends Robots{
     }
 
     @Override
-    void ejecutarTarea() {
+    public void ejecutarTarea() {
         System.out.println("Soldaduras precisas");
     }
 
     @Override
-    boolean recargar() {
+    public boolean recargar() {
         if(estado.equals("APAGADO")){
             System.out.println("Recargando por electricidad");
             return true;

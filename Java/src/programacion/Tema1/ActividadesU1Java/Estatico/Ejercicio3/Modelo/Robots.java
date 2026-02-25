@@ -1,7 +1,7 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3.Modelo;
 
 public abstract class Robots {
-    private int id;
+    private static int id;
     private String modelo;
     private double bateria;
     Estado estado;

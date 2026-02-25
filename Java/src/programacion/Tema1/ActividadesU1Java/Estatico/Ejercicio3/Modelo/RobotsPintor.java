@@ -1,4 +1,4 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3.Modelo;
 
 public class RobotsPintor extends Robots{
     public RobotsPintor(String modelo, double bateria, Estado estado, double combustible, String descripcion) {
@@ -6,12 +6,12 @@ public class RobotsPintor extends Robots{
     }
 
     @Override
-    void ejecutarTarea() {
+    public void ejecutarTarea() {
         System.out.println("Aplica pintura a los vehículos de manera uniforme");
     }
 
     @Override
-    boolean recargar() {
+    public boolean recargar() {
         System.out.println("Recargando por electricidad");
         return true;
     }

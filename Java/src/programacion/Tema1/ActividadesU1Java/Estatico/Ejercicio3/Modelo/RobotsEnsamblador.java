@@ -1,4 +1,4 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio3.Modelo;
 
 public class RobotsEnsamblador extends Robots{
     public RobotsEnsamblador(String modelo, double bateria, Estado estado, double combustible, String descripcion) {
@@ -6,12 +6,12 @@ public class RobotsEnsamblador extends Robots{
     }
 
     @Override
-    void ejecutarTarea() {
+    public void ejecutarTarea() {
         System.out.println("Ensamblar piezas");
     }
 
     @Override
-    boolean recargar() {
+    public boolean recargar() {
         if(estado.equals("APAGADO") && suficienteBateria()){
             System.out.println("Recargando por gasolina");
             return true;
