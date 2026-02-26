@@ -1,11 +1,11 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio4;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio4.Modelo;
 
-public class Roedor extends Animal{
-    public Roedor(String nombre, String habitat, Animal[] come, Animal[] esComido) {
+public class Leon extends Animal{
+    public Leon(String nombre, String habitat, Animal[] come, Animal[] esComido) {
         super(nombre, habitat, come, esComido);
     }
 
-    public Roedor() {
+    public Leon() {
     }
 
     @Override

@@ -1,4 +1,4 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio4;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio4.Modelo;
 
 import java.util.Arrays;
 

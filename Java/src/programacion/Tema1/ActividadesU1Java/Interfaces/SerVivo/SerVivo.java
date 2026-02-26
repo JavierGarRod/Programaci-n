@@ -1,4 +1,4 @@
-package programacion.Tema1.ActividadesU1Java.Interfaces;
+package src.programacion.Tema1.ActividadesU1Java.Interfaces.SerVivo;
 
 public abstract class SerVivo {
 

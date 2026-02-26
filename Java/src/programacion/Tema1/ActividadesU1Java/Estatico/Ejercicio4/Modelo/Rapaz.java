@@ -1,9 +1,9 @@
-package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio4;
+package src.programacion.Tema1.ActividadesU1Java.Estatico.Ejercicio4.Modelo;
 
-public class Serpiente extends Animal{
-    public Serpiente(String nombre, String habitat, Animal[] come, Animal[] esComido) {
+public class Rapaz extends Animal{
+    public Rapaz(String nombre, String habitat, Animal[] come, Animal[] esComido) {
         super(nombre, habitat, come, esComido);
-        Roedor s=new Roedor();
+        Serpiente s=new Serpiente();
         Roedor r=new Roedor();
         this.getCome()[0]= s;
         this.getCome()[1]=r;
@@ -12,7 +12,8 @@ public class Serpiente extends Animal{
         this.getEsComido()[0]=l;
     }
 
-    public Serpiente(){
+    public Rapaz() {
+        super();
     }
 
     @Override
